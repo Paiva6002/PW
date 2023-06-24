@@ -14,8 +14,8 @@
 <body>
     <div class="container-fluid">
         <div class="flex-container d-flex">
-            <div class="flex-item item1 align-self-start"><a href="./index.html">Home</a></div>
-            <div class="flex-item item2"><a href="./cadastrar.html">Cadastrar</a></div>
+            <div class="flex-item item1 align-self-start"><a href="./index.php">Home</a></div>
+            <div class="flex-item item2"><a href="./cadastrar.php">Cadastrar</a></div>
           </div>
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center left-side">

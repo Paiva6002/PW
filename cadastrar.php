@@ -13,8 +13,8 @@
 <body>
     <div class="container-fluid">
         <div class="flex-container d-flex">
-            <div class="flex-item item1 align-self-start"><a href="./index.html">Home</a></div>
-            <div class="flex-item item2"><a href="./cadastrar.html">Cadastrar</a></div>
+            <div class="flex-item item1 align-self-start"><a href="./index.php">Home</a></div>
+            <div class="flex-item item2"><a href="./cadastrar.php">Cadastrar</a></div>
         </div>
         <div class="row">
             <div class="col-6 d-flex justify-content-center align-items-center left-side">
@@ -22,7 +22,7 @@
                 <img src="./assets/images/logo.svg" class="left_side__brand img-fluig" height="500px" width="500px">
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center right-side">
-                <form action="./assets/php/cadastro_cliente.php" method="post">
+                <form action="cadastro_cliente.php" method="post">
                     <div class="mb-3">
                         <div class="container-label"><label for="nome" class="form-label ">Nome</label></div>
                         <input type="text" class="form-control form-input" name="nome">
@@ -33,7 +33,8 @@
                         <input type="tel" name="telefone" plac class="form-control form-input">
                         <div class="container-button"><button type="submit" class= "form-button btn btn-outline-warning mt-3">Cadastrar</button></div>
                         <?php 
-                    include './assets/php/cadastro_cliente.php';
+                    include 'cadastro_cliente.php';
+                    include 'conexao.php';
                         ?>
                        
                 </form>
