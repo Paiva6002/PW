@@ -1,4 +1,4 @@
-<h1 align="center"> (nome do projeto) </h1>
+<h1 align="center"> GYM </h1>
 
 <p align="center">Atividade desenvolvida no 2°Bimestre pelo Professor <strong>Diogo</strong> <br/>
 </p>
@@ -13,7 +13,7 @@
 <br>
 
 <p align="center">
-  <img alt="Projeto" src="./IMAGEM(PRINT DO LAYOUT)" width="100%">
+  <img alt="Projeto" src="./assets/images/layout-readme.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
