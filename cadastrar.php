@@ -33,11 +33,9 @@
                         <input type="tel" name="telefone" plac class="form-control form-input">
                         <div class="container-button"><button type="submit" class= "form-button btn btn-outline-warning mt-3">Cadastrar</button></div>
                         <?php 
-                    include 'cadastro_cliente.php';
-                    include 'conexao.php';
+                          include 'cadastro_cliente.php';
+                          include 'conexao.php';
                         ?>
-                       
-                </form>
             </div>
         </div>
     </div>

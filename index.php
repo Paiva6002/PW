@@ -17,8 +17,8 @@
             <div class="flex-item item1 align-self-start"><a href="./index.php">Home</a></div>
             <div class="flex-item item2"><a href="./cadastrar.php">Cadastrar</a></div>
           </div>
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center align-items-center left-side">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-1 ">
                 <div class="container-slogan">
                     <h1 class="text-center mt-5">"Quem cresce natural é planta"</h1>
                     <br>
