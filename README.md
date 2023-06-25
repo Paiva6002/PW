@@ -20,7 +20,7 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
+- CSS
 - JavaScript
 - Git e Github
 - Figma
