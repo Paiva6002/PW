@@ -18,19 +18,10 @@
         </div>
         <div class='row'>
             <div class="col-6 d-flex justify-content-center align-items-center">
-                <?php
-                $nome = isset($_POST['nome']) ? $_POST['nome'] : 0;
-                $telefone = isset($_POST['telefone']) ? $_POST['telefone'] : 0;
-                $dataCadastro = date('d/m/Y');
-                if ($nome != null && $telefone != null) {
-                    echo "<div class='alert alert-success mt-3 container-alert'>Cadastrado com sucesso!</div>";
-                } else {
-                    echo "<div class='alert alert-danger container-alert'>Não pode ser vazio!</div>";
-                }
-                ?>
+               
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center right-side">
-                <form action="consultar.php" method="post">
+                <form action="cliente_crud.php" method="post">
                     <div class="mb-3">
                         <div class="container-label"><label for="dataPagamento" class="form-label">Data Pagamento</label></div>
                         <input type="date" class="form-control form-input" name="dataPagamento">
