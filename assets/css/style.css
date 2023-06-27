@@ -72,3 +72,13 @@ a {
   box-shadow: inset 200px 0 0 0 #54b3d6;
   text-decoration: underline;
 }
+
+/* Planos.php */
+
+.title {
+  display: flex;
+}
+
+hr {
+  margin-top: 0;
+}
