@@ -21,18 +21,28 @@
                 <img src="./assets/images/logo.svg" class="left_side__brand img-fluig" height="500px" width="500px">
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center right-side">
-                <form action="cadastro_pagamento.php" method="post">
+                <form action="insert_cliente.php" method="post">
                     <div class="mb-3">
-                        <div class="container-label"><label for="nome" class="form-label ">Nome</label></div>
-                        <input type="text" class="form-control form-input" name="nome">
+                        <div class="container-label"><label for="codigo" class="form-label ">Código</label></div>
+                        <input type="number" class="form-control form-input" name="codigo">
                     </div>
                     <div class="container-label">
-                        <label for="telefone" class="form-label">Telefone</label>
+                        <label for="nome" class="form-label">Nome</label>
                     </div>
-                    <input type="tel" name="telefone" plac class="form-control form-input">
+                    <input type="text" name="nome" plac class="form-control form-input">
                     <div class="container-button">
-                        <button type="submit" class="form-button btn btn-outline-warning mt-3">Cadastrar</button>
-                    </div>
+                        <div class="container-label">
+                            <label for="telefone" class="form-label">Telefone</label>
+                        </div>
+                        <input type="text" name="telefone"  class="form-control form-input" placeholder='SEM DD'>
+                        <div class="container-button">
+                            <div class="container-label">
+                                <label for="dataCadastro" class="form-label">Data Cadastro</label>
+                            </div>
+                            <input type="text" name="dataCadastro"  class="form-control form-input" >
+                            <div class="container-button">
+                                <button type="submit" class="form-button btn btn-outline-warning mt-3">Cadastrar</button>
+                            </div>
                 </form>
 
 

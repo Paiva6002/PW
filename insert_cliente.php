@@ -1,6 +1,9 @@
 <?php 
 include 'conexao.php';
-include 'cadastro_pagamento.php';
+$codigo = isset($_POST['codigo'])?$_POST['codigo']:0;
+$nome = isset($_POST['nome'])?$_POST['nome']:0;
+$telefone = isset($_POST['telefone'])?$_POST['telefone']:0;
+$dataCadastro = isset($_POST['dataCadastro'])?$_POST['dataCadastro']:0;
 
 // Declaração SQL a ser executada
 $sql = "INSERT INTO cliente  VALUES ($codigo, '$nome', $telefone, $dataCadastro)";
