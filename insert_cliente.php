@@ -14,6 +14,7 @@ if ($connection->query($sql) === true) {
 } else {
     echo "Erro ao inserir dados: " . $connection->error;
 }
-
+echo "<br>";
+echo "<a href='cadastro_pagamento.php'>Cadastrar pagamento</a>";
 
 ?>
