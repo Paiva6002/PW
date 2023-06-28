@@ -50,9 +50,6 @@
     $telefone = isset($_GET['telefone']) ? $_GET['telefone'] : null;
     $dataCadastro = date('d/m/Y');
 
-    var_dump($dataCadastro);
-
-
     if ($nome != null && $telefone != null) {
       $sql = "INSERT INTO cliente  VALUES (0, '$nome', '$telefone', '$dataCadastro')";
 

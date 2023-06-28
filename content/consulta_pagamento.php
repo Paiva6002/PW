@@ -6,8 +6,8 @@
     </div>
     <hr>
     <section class="d-flex justify-content-center mt-5">
-        <form action="content/pagamento_crud.php" method="POST">
-          <input type="hidden" value="crud_pagamento">
+        <form action="content/crud.php" method="POST">
+      <input type="hidden" name="page" value="consulta-pagemento">
           <div class="row d-flex justify-content-center ">
             <div class="col-10 d-flex justify-content-center flex-row gap-5">
               <div>
@@ -47,3 +47,4 @@
         </form>
       </section>
     </section>
+
