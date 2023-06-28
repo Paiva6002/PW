@@ -6,14 +6,14 @@ CREATE TABLE cliente (
 codigo int PRIMARY KEY AUTO_INCREMENT,
 nome VARCHAR(100),
 telefone INT(13),
-dataCadastro DATE
+dataCadastro VARCHAR(20)
 );
 
 CREATE TABLE pagamento (
 codigo INT PRIMARY KEY AUTO_INCREMENT,
 codigoCliente INT,
 nomeCliente VARCHAR(100),
-dataPagamento DATE,
+dataPagamento VARCHAR(20),
 valorPagamento DECIMAL(5,2),
 FOREIGN KEY (codigoCliente) REFERENCES cliente(codigo)
 );

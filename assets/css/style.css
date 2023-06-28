@@ -15,18 +15,19 @@
 
 body {
   overflow: hidden;
-}
-
-.container-fluid {
-  height: 100vh;
   background-color: var(--primary-color);
 }
 
-.left-side,
-.right-side {
-  margin-left: 4em;
-  margin-top: 20vh;
-  overflow: hidden;
+.container {
+  height: 100vh;
+}
+
+.bloco-main-cadastrar {
+  margin: 7em;
+}
+
+.section-form {
+  width: 20em;
 }
 
 h1 {
@@ -53,6 +54,7 @@ a {
 
 .flex-item {
   font-size: 16px;
+  margin: 0 10px 0 10px;
 }
 
 .item1 {
