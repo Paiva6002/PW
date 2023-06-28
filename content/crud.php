@@ -23,8 +23,21 @@ include '../header/header.php';
         $telefone = isset($_POST['telefone']) ? $_POST['telefone'] : null;
         $dataCadastro = isset($_POST['data-cadastro']) ? $_POST['data-cadastro'] : null;
         $acao = isset($_POST['acao']) ? $_POST['acao'] : null;
+
         if ($acao == 'Excluir') {
-          $sql = "DELETE FROM cliente WHERE codigo = $codigo";
+          if ($codigo != null) {
+            $sql = "DELETE FROM cliente WHERE codigo = $codigo";
+          }
+          if ($nomeCliente != null) {
+            $sql = "DELETE FROM  cliente WHERE nome LIKE '$nomeCliente'";
+          }
+          if ($dataCadastro != null) {
+            $sql = "DELETE FROM  cliente WHERE dataCadastro = $dataCadastro";
+          }
+          if ($telefone != null) {
+            $sql = "DELETE FROM  cliente WHERE telefone = $telefone";
+          }
+
           if ($connection->query($sql) === true) {
             echo "<div class='alert alert-success'>Registro apagado com sucesso!</div>";
           } else {
@@ -113,8 +126,24 @@ include '../header/header.php';
         $dataPagamento = isset($_POST['dataPagamento']) ? $_POST['dataPagamento'] : null;
         $valorPagamento = isset($_POST['valorPagamento']) ? $_POST['valorPagamento'] : null;
         $acao = isset($_POST['acao']) ? $_POST['acao'] : null;
+
         if ($acao == 'Excluir') {
-          $sql = "DELETE FROM pagamento WHERE codigo = $codigo";
+          if ($codigo != null) {
+            $sql = "DELETE FROM pagamento WHERE codigo = $codigo";
+          }
+          if ($codigoCliente != null) {
+            $sql = "DELETE FROM pagamento WHERE codigoCliente = $codigoCliente";
+          }
+          if ($nomeCliente != null) {
+            $sql = "DELETE FROM pagamento WHERE nome LIKE '$nomeCliente'";
+          }
+          if ($dataPagamento != null) {
+            $sql = "DELETE FROM pagamento WHERE dataCadastro = $dataPagamento";
+          }
+          if ($valorPagamento != null) {
+            $sql = "DELETE FROM  pagamento WHERE telefone = $valorPagamento";
+          }
+
           if ($connection->query($sql) === true) {
             echo "<div class='alert alert-success'>Registro apagado com sucesso!</div>";
           } else {
@@ -134,7 +163,7 @@ include '../header/header.php';
             $sql = "SELECT * FROM pagamento WHERE codigo = $codigo";
           }
           if ($codigoCliente != null) {
-            $sql = "SELECT * FROM pagamento WHERE nome LIKE '$codigoCliente'";
+            $sql = "SELECT * FROM pagamento WHERE codigoCliente = '$codigoCliente'";
           }
           if ($nomeCliente != null) {
             $sql = "SELECT * FROM pagamento WHERE nome LIKE '$nomeCliente'";
